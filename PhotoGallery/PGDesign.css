@@ -1,0 +1,105 @@
+body{
+	background-color: #1c1c1c;
+}
+
+/* navigation lang ito */
+/* navigation bar css */
+.topnav {
+  background-color: #363636;
+  overflow: hidden;
+  font-family: courier;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18.4px;
+  font-weight: bold;
+
+}
+
+.topnav a:hover {
+  color: #696969;
+}
+
+.topnav a.active {
+  background-color: #4d4d4d;
+  color: white;
+}
+p{
+	color: white;
+	font-size: 2em;
+	font-family: arial;
+	text-align: center;
+}
+
+img{
+	width: 250px;
+	height: auto;
+	border:solid 3px #6d6877;
+	border-radius: 10px;
+	margin: 100px;
+	padding: 5px;
+	opacity: 0.5;
+	transition: transform 0s;
+}
+img:hover{
+	opacity:1;
+	transform: scale(1.3);
+}
+
+.home{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	
+}
+.home:hover{
+	color: red;
+	background-color: navy;
+}
+
+.cent{
+	text-align:center;
+}
+
+.button{
+	background-color: #4d4d4d; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size: 2em;
+	transition: transform 0s;
+	font-family: helvetica;
+}
+.button:hover{
+	transform: scale(1.3);
+	text-shadow: 4px 4px 8px #000000;
+}
+
+.clean{
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: white;
+	transition: transform 0s;
+	font-family: helvetica;
+}
+
+
+.clean:hover{
+	color: white;
+	transform: scale(1.3);
+}

@@ -1,0 +1,58 @@
+/* navigation bar css */
+.topnav {
+  background-color: #363636;
+  overflow: hidden;
+  font-family: courier;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18.4px;
+  font-weight: bold;
+
+}
+
+.topnav a:hover {
+  color: #696969;
+}
+
+.topnav a.active {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+p#desc{
+	font-family:tahoma;
+	font-size: 18px;
+	color: black;
+	text-align:center;
+}
+
+.right{
+	float: right;
+	clear: right;
+}
+.left{
+	float: left;
+	clear: left;
+}
+
+img{
+	border-radius: 40px;
+	margin: 2
+	0px;
+}
+body{
+	background-color: black;
+}
+p{
+	color: white;
+	font-family: arial;
+	overflow: auto;
+	
+
+}

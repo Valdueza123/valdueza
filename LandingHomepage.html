@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<link rel="stylesheet" href="VALDUEZA_homepageDesign.css">
+	<title>Landing Homepage</title>
+	<style type = "text/css">
+	</style>	
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+
+<div class="topnav">
+  <a href ="LandingHomepage.html" id = "home" class = "active">Home</a>
+  <a href="Biography/Valdueza_Biography_ITAD.html">About Me</a>
+  <a href="Resume/Valdueza_ITAD_resume.html">Resume</a>
+  <a href="Skills/VALDUEZA_ITAD_SKILLS.html">Skills/Interest/Hobbies</a>
+  <a href="PhotoGallery/Valdueza_PhotoGallery.html">Photo Gallery</a>
+  <a href="MyBeats/MyBeats.html">My Beats</a>
+  <a href="MKF/Movies.html">Movie</a>
+  <a href="MKF/Shows.html">TV Shows</a>
+  <a href="ImageMap/ImageMapping.html">Places I want to Visit</a>
+  <a href="Bucketlist/bucketlist.html">Bucketlist</a>
+</div>
+
+</br>
+<div class = "paragraph">
+<button onclick="typeWriter()" class = "button buttonColor">About me!</button>
+<p id="demo"></p>
+
+<script class = "paragraph">
+var i = 0;
+var txt = 'Hi! and welcome to my homepage! I am Frederick C. Valdueza, a hardworking student currently enrolled in the University of the East, Manila. You can learn more about me here! Just check the navigation bar above.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</div>
+
+		
+
+<!--slideshow testing-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="HomeImages/pic1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+	<div class="numbertext">2 / 6</div>
+    <img src="HomeImages/pic2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+	<div class="numbertext">3 / 6</div>
+    <img src="HomeImages/pic3.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+	<div class="numbertext">4 / 6</div>
+    <img src="HomeImages/pic4.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+	<div class="numbertext">5 / 6</div>
+    <img src="HomeImages/pic5.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+	<div class="numbertext">6 / 6</div>
+    <img src="HomeImages/pic6.jpg" style="width:100%">
+  </div>
+
+</div>
+<br>
+
+
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+	
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+}
+</script>
+
+
+</body>
+</html>
