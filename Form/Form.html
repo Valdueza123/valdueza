@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Order Form</title>
+	<link rel="stylesheet" href="FormDesign.css">
+	<style type = "text/css">
+	</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css">
+  <!--VALDUEZA, FREDERICK-->
+  <!--5/3/2023-->
+  <table>
+    <form method="post" action="greetings.html">
+	<thead>
+	<tr style="background-color:rgb(166, 11, 38);">
+		<div class = "center">
+		<th colspan="4"><img src="pizza.png" class = "center"></th>
+		</div>
+	</tr>
+	<tr>
+		<th colspan="4"> Order Form </th>
+    </thead>
+    <tbody>
+	<tr>
+        <td><label for="name">Full Name:</label></td>
+        <td><input type="text" name="name" size="30" placeholder="Last, Given, MI" maxlength ="50" autofocus required></td>
+	</tr>
+		
+	<tr>
+		<td><label for="contact">Contact Number</label></td>
+		<td><input type="text" name="contact" size="30" placeholder="Contact No." maxlength ="11" autofocus required></td
+	</tr>
+		
+	<tr>
+		<td><label for="address">Address</label></td></br>
+		<td><input type="text" name="address" size="50" placeholder="Address" maxlength ="50" autofocus required></td></br>
+	</tr>
+
+	<tr>
+		<td><label for="email">Email Address</label></td>
+		<td><input type="text" name="email" size="30" placeholder="Email" maxlength ="50" autofocus required></td>
+	</tr>
+
+	<tr>
+		<td><label for="direction">Description on how to get to your house</label></td>
+		<td><textarea rows="10" cols="30" placeholder="Instructions on how to get to your house or destination"></textarea></td>
+	</tr>
+	</tbody>
+	
+	<!--Borger-->
+	<thead>
+		<tr>
+			<th colspan="4"> Burger </th>
+    </thead>
+
+	<tbody>				
+      <!--Burger patty-->
+      <tr>
+        <td><label for="burger">Burger:</label></td>
+        <td>
+		<!--single or double-->
+          <input type="radio" id="single" name="burger" value="burger" CHECKED>
+          <label for="single">Single Patty</label><br>
+		  
+          <input type="radio" id="double" name="burger" value="burger">
+          <label for="double">Double Patty</label><br>
+		  
+		  <!--add-ons?-->
+		  <input type="checkbox" id="cheese" name="cheese" value="cheese">
+          <label for="cheese"> With Cheese </label><br>
+		  
+		  <input type="checkbox" id="coleslaw" name="coleslaw" value="coleslaw">
+          <label for="coleslaw"> Coleslaw </label><br>
+		  
+		  <input type="checkbox" id="Tomato" name="Tomato" value="Tomato">
+          <label for="Tomato"> Tomato </label><br>
+		  
+		  <input type="checkbox" id="Onion" name="Onion" value="Onion">
+          <label for="Onion"> Onion</label><br>
+		  
+		  <input type="checkbox" id="Cucumber" name="Cucumber" value="Cucumber">
+          <label for="Cucumber"> Cucumber </label><br>
+		  
+		  <input type="checkbox" id="Bacon" name="Bacon" value="Bacon">
+          <label for="Bacon"> Bacon </label><br>	  
+        </td>
+      </tr>
+      <!--Buns-->
+      <tr>
+        <td><label for ="Buns">Choice of Bun</label></td>
+        <td>
+          <select name="Buns" id="Buns" size="1">
+            <option value="whiteBun" SELECTED>white bun</option>
+            <option value="wheatBun">wheat bun</option>
+            <option value="honeyOat">honey oat</option>
+            <option value="SG">sugar-free</option>
+          </select>
+        </td>
+      </tr>
+	  
+	  <tr>
+		<td><label for="quantity"> Quantity </label></td>
+		<td><input type="number" id="quantityBurger" name="quantityBurger" min="1" max="100"></td>
+      </tr>
+	  </tbody>
+	  
+	  <!--Pasta-->
+		<thead>
+			<tr>
+				<th colspan="4"> Pasta </th>
+		</thead>
+	  
+	  <tbody>
+      <!--Pasta-->
+      <tr>
+        <td><label for="pasta">Pasta</label></td>
+        <td>
+          <input type="radio" id="pasta" name="pasta" value="carbonara" CHECKED>
+          <label for="pasta"> Carbonara </label><br>
+          
+          <input type="radio" id="pesto" name="pasta" value="pesto">
+          <label for="pesto"> Pesto </label><br>
+          
+          <input type="radio" id="spagh" name="pasta" value="spaghetti">
+          <label for="spagh"> Spaghetti </label><br>
+		  
+		  <input type="checkbox" id="extraCheese" name="extraCheese" value="extraCheese">
+          <label for="extraCheese"> Extra Cheese </label><br>
+		  
+		  <input type="checkbox" id="extraSauce" name="extraSauce" value="extraSauce">
+          <label for="extraSauce"> Extra Sauce </label><br>
+		  
+		  <input type="checkbox" id="extraEverything" name="extraEverything" value="extraEverything">
+          <label for="extraEverything"> Extra everything </label><br>
+        </td>
+      </tr>
+	  
+	  <tr>
+		<td><label for="quantity"> Quantity (Per Box) </label></td>
+		<td><input type="number" id="quantityPasta" name="quantityPasta" min="1" max="100"></td>
+      </tr>
+    
+	  </tbody>
+	  
+	  <!--sides-->
+	  <thead>
+	  <tr>
+		<th colspan="4"> Sides </th>
+		</tr>
+		</thead>
+	  
+	  <tbody>
+	  <tr>
+	  
+		<!--fries-->
+		<td><label for="pasta">Fries</label></td>
+        <td>
+			<input type="radio" id="Small" name="fries" value="small" CHECKED>
+			<label for="Small"> Small </label><br>
+			
+			<input type="radio" id="Medium" name="fries" value="medium">
+			<label for="Medium"> medium </label><br>
+			
+			<input type="radio" id="Large" name="fries" value="large">
+			<label for="Large"> Large </label><br>
+			
+			<select name="fries" id="fries" size="1">
+				<option value="bbq">BBQ</option>
+				<option value="cheese">Cheese</option>
+				<option value="SC">Sour Cream</option>
+				<option value="none" SELECTED>None</option>
+			</select>
+			</tr>
+			<tr>			
+				<td><label for="quantity"> Quantity </label></td>
+				<td><input type="number" id="quantityFries" name="quantityFries" min="1" max="100"></td>
+			</tr>
+			
+		<!--drinks-->
+		<td><label for="drinks">Drinks</label></td>
+		<td>
+			<input type="radio" id="smallDrink" name="drinks" value="small" CHECKED>
+			<label for="smallDrink"> Small </label><br>
+			
+			<input type="radio" id="mediumDrink" name="drinks" value="medium">
+			<label for="mediumDrink"> medium </label><br>
+			
+			<input type="radio" id="largeDrink" name="drinks" value="large">
+			<label for="largeDrink"> Large </label><br>
+		</td>
+		<tr>			
+				<td><label for="quantity"> Quantity </label></td>
+				<td><input type="number" id="quantityFries" name="quantityFries" min="1" max="100"></td>
+		</tr>
+	 		
+      </tbody>
+      
+      <tfoot>
+        <tr>
+          <th colspan="2"><input type="submit" id="btn1" value="Submit"></th>		  
+        </tr>
+		<tr>
+			<th colspan="2"><input type="reset" id="btn2" value="Reset"> </th>
+		</tr>
+        </tfoot>
+      </table>
+    </body>
